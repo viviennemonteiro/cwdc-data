@@ -1,0 +1,16 @@
+{
+  "hotkeys": {
+    "race_black": "a",
+    "race_hispanic": "s",
+    "race_white": "d",
+    "race_none": "h",
+    "gender_toggle": "g",
+    "gender_none": "j",
+    "save_and_next": "enter",
+    "quit": "q"
+  },
+  "defaults": {
+    "race": "Black or African-American",
+    "gender": "Male"
+  }
+}
