@@ -5,8 +5,8 @@ from datetime import datetime
 import os
 import pandas as pd
 
-lu_dir = "/Users/viviennemonteiro/Projects/DC Courtwatch/lu_lists/new_lists"
-temp_file_path = "/Users/viviennemonteiro/Projects/DC Courtwatch/lockupscraper/LockUpScraper2.0/output/temp/temp_lu.txt"
+lu_dir = "./lu_lists/new_lists"
+temp_file_path = "./LockUpScraper2.0/output/temp/temp_lu.txt"
 dir_list = os.listdir(lu_dir)
 result_df = pd.DataFrame()
 
@@ -29,4 +29,4 @@ for i, file in enumerate(dir_list):
 
 cleaned_df = clean_lu_df(result_df)
 
-cleaned_df.to_csv('/Users/viviennemonteiro/Projects/DC Courtwatch/lockupscraper/LockUpScraper2.0/output/scraped_lulist.csv', index=False)
+cleaned_df.to_csv('./LockUpScraper2.0/output/scraped_lulist.csv', index=False)

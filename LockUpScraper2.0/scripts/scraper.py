@@ -161,7 +161,7 @@ def validate_normalize_lunums(lunums, start_num=1):
         # Check for sequential order
         if num != expected_num:
             print(
-                f"❌ Out of order: Expected {expected_num}, found {num} at position {i}")
+                f"Out of order: Expected {expected_num}, found {num} at position {i}")
             out_of_order.append((i, expected_num, num))
 
         expected_num = num + 1
@@ -255,12 +255,12 @@ def validate_normalize_lunums(lunums, start_num=1):
         if num in seen_numbers:
             duplicates.append(i)
             fixed_lunums[i]._is_duplicate = True
-            print(f"❌ Duplicate found after correction: {num} at position {i}")
+            print(f"Duplicate found after correction: {num} at position {i}")
         seen_numbers.add(num)
 
     if duplicates:
         print(
-            f"\n⚠️  {len(duplicates)} duplicate(s) flagged after sequence correction")
+            f"\n {len(duplicates)} duplicate(s) flagged after sequence correction")
     elif not out_of_order:
         print("✓ Sequence is valid!")
 
@@ -273,7 +273,7 @@ def validate_normalize_lunums(lunums, start_num=1):
         missing_numbers = sorted(expected_set - found_set)
         
         if missing_numbers:
-            print(f"\n🔍 Found {len(missing_numbers)} missing lock up number(s): {missing_numbers}")
+            print(f"\nFound {len(missing_numbers)} missing lock up number(s): {missing_numbers}")
             print("Creating placeholder LuNum objects for missing numbers...")
             
             # Create placeholder LuNum objects for missing numbers
