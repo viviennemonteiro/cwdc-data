@@ -11,5 +11,5 @@ Currently this tool supports entering age, race, and gender which is generally t
 
 # Todos
 - [ ] Test pdfplumber
-- [ ] Implement OCR Fallback (this requires)
+- [ ] Implement OCR Fallback (this requires some fiddling with the regex a bit)
 - [ ] Add pipe for missing data to the quick entry tool
